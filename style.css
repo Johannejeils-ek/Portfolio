@@ -1,0 +1,181 @@
+/* Alt */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.all-headings{
+    font-size:1.5rem;
+    font-weight: 600;
+    background: #9BB2C4;
+}
+
+
+/* Body */
+body {
+    line-height: 1.6;
+    font-family: "Spectral", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    background: #9BB2C4;
+    color: white;
+}
+
+.logo {
+    /*------ Font ------*/
+    font-size: 2rem;
+    font-family: "Parisienne", cursive;
+    font-weight: 600;
+    font-style: normal;
+    padding: 3rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 6rem;
+    padding: 3rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background-color: #F2F2F0;
+    color: #9BB2C4;
+    border-radius: 10px;
+}
+
+/* Intro */
+#intro {
+    background: #9BB2C4;
+    color: #efeae4;
+    padding: 2rem;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* = grid-template-columns: 1fr 1fr 1fr; */
+    gap: 2rem;
+}
+
+.intro-box {
+    position: relative;
+}
+
+.intro-img img {
+    width: 100%;
+    height: auto;
+}
+
+.me3 {
+    margin-top: 1rem;
+}
+
+.overlay-text {
+    display: inline-block;
+    transform: rotate(-10deg);
+    position: absolute;
+    bottom: 7rem;
+    left: 14rem;
+
+    /*------ Font ------*/
+    font-family: "Babylonica", cursive;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 5rem;
+}
+
+.intro-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.intro-text p {
+    max-width: 80%;
+    font-size: 1.1rem;
+}
+
+.me3 {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Om mig */
+#about-me {
+    background: #efeae4;
+    padding: 3rem 2rem;
+}
+
+.about-me-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: start;
+}
+
+.about-me-grid img {
+    width: 100%;
+
+}
+
+.about-me-text {
+    width: 100%;
+    height: auto;
+}
+
+.text-block h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.text-block p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+/*------ CV ------*/
+#cv{
+    background: #9BB2C4;
+    padding: 2rem;
+    color: #efeae4;
+}
+
+.cv-heading{
+    display: flex;
+    justify-content: center;
+    background: #9BB2C4;
+
+}
+#cv ul {
+    background: #9BB2C4;
+    display: flex;
+    list-style-type: none;
+    padding: 3rem 3rem;
+    gap: 4rem;
+}
+
+/*------ Section.footer ------*/
+#contact {
+    outline: #efeae4 solid 10px;
+    background: #9BB2C4;
+    text-align: center;
+    color: #efeae4;
+}
+
+#contact a{
+    text-decoration: none;
+    
+}
