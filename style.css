@@ -173,6 +173,11 @@ nav a:hover {
     padding: 2rem;
 }
 
+.education-text{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
 .education-fold-out{
     display: flex;
     justify-content: space-around;
@@ -180,20 +185,17 @@ nav a:hover {
     position: relative;
     color: #efeae4;
     gap: 2rem;
-}
-
-.education-fold-out details{
-    background: #9BB2C4;
-    padding: 1rem;
-    border-radius: 2rem;
-    flex: 1; /* alle bokse fylder lige meget*/
-            /*Hvis du har 3 <details> i en flex-række, så betyder flex: 1;, at hver af dem får præcis en tredjedel af pladsen, uanset hvor meget tekst der står i summary.*/
-
+    margin-bottom: 1rem;
 }
 
 .education-fold-out details{
     font-weight: 500;
     cursor: pointer;
+    background: #9BB2C4;
+    padding: 1rem;
+    border-radius: 2rem;
+    flex: 1; /* alle bokse fylder lige meget*/
+            /*Hvis du har 3 <details> i en flex-række, så betyder flex: 1;, at hver af dem får præcis en tredjedel af pladsen, uanset hvor meget tekst der står i summary.*/
 }
 
 .education-fold-out details ul{
@@ -202,6 +204,35 @@ nav a:hover {
 
 .education-fold-out details[open]{
     display: block;
+}
+
+/*------ Styrker  ------*/
+#strengths{
+    background: #9BB2C4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: #efeae4;
+}
+
+#strengths ul {
+    background: #9BB2C4;
+    list-style-type: none;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+}
+#strengths li{
+    margin-bottom: 1rem;
+}
+
+/*------ Hvorfor vælge mig/ Mål  ------*/
+#why-me-goals{
+    background: #efeae4;
+    padding: 2rem;
 }
 
 /*------ Section.footer ------*/
