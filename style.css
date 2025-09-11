@@ -183,7 +183,6 @@ nav a:hover {
     justify-content: space-around;
     align-items: flex-start;
     position: relative;
-    color: #efeae4;
     gap: 2rem;
     margin-bottom: 1rem;
 }
@@ -191,7 +190,7 @@ nav a:hover {
 .education-fold-out details{
     font-weight: 500;
     cursor: pointer;
-    background: #9BB2C4;
+    background: rgba(155, 178, 196, 0.5); /*Gennemsigtig Farve*/
     padding: 1rem;
     border-radius: 2rem;
     flex: 1; /* alle bokse fylder lige meget*/
@@ -226,13 +225,24 @@ nav a:hover {
 
 }
 #strengths li{
-    margin-bottom: 1rem;
+    font-size: 1rem;
 }
 
 /*------ Hvorfor vælge mig/ Mål  ------*/
 #why-me-goals{
     background: #efeae4;
     padding: 2rem;
+    display: flex;
+    gap: 2rem;v
+}
+
+.why-me-goals-box{
+    background: rgba(155, 178, 196, 0.5); /*Gennemsigtig Farve*/
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 2rem;
+
 }
 
 /*------ Section.footer ------*/
@@ -241,6 +251,8 @@ nav a:hover {
     background: #9BB2C4;
     text-align: center;
     color: #efeae4;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 #contact a{
