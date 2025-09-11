@@ -148,14 +148,15 @@ nav a:hover {
 .about-me-bt{
     background-color: rgba(155, 178, 196, 0.5);
     display: inline-block;
-    padding: 0.5rem;
+    padding: 0.8rem;
     border-radius: 2rem;
+    font-weight: 600;
 }
 
 .about-me-bt:hover{
     background-color: rgba(155, 178, 196, 0.7);
     display: inline-block;
-    padding: 0.5rem;
+    padding: 0.8rem;
     border-radius: 2rem;
 }
 
@@ -269,6 +270,15 @@ nav a:hover {
 
 .why-me-goals-box{
     background-color: rgba(155, 178, 196, 0.5); /*Gennemsigtig Farve*/
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 2rem;
+    flex: 1;
+}
+
+.why-me-goals-box:hover{
+    background-color: rgba(155, 178, 196, 0.7); /*Gennemsigtig Farve*/
     display: flex;
     flex-direction: column;
     padding: 2rem;
