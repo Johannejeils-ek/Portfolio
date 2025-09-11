@@ -170,10 +170,39 @@ nav a:hover {
 /*------ Uddannelse ------*/
 #education{
     background: #efeae4;
-    color: red;
-    padding: 3rem;
+    padding: 2rem;
 }
 
+.education-fold-out{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+    color: #efeae4;
+    gap: 2rem;
+}
+
+.education-fold-out details{
+    background: #9BB2C4;
+    padding: 1rem;
+    border-radius: 2rem;
+    flex: 1; /* alle bokse fylder lige meget*/
+            /*Hvis du har 3 <details> i en flex-række, så betyder flex: 1;, at hver af dem får præcis en tredjedel af pladsen, uanset hvor meget tekst der står i summary.*/
+
+}
+
+.education-fold-out details{
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.education-fold-out details ul{
+    list-style-type: none;
+}
+
+.education-fold-out details[open]{
+    display: block;
+}
 
 /*------ Section.footer ------*/
 #contact {
