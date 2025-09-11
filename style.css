@@ -8,9 +8,7 @@
 .all-headings{
     font-size:1.5rem;
     font-weight: 600;
-
 }
-
 
 /* Body */
 body {
@@ -24,7 +22,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    background: #9BB2C4;
+    background-color: #9BB2C4;
     color: white;
 }
 
@@ -49,6 +47,7 @@ nav a {
     text-decoration: none;
     font-size: 0.95rem;
     font-weight: 500;
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
@@ -59,7 +58,7 @@ nav a:hover {
 
 /* Intro */
 #intro {
-    background: #9BB2C4;
+    background-color: #9BB2C4;
     color: #efeae4;
     padding: 2rem;
 }
@@ -77,10 +76,6 @@ nav a:hover {
 .intro-img img {
     width: 100%;
     height: auto;
-}
-
-.me3 {
-    margin-top: 1rem;
 }
 
 .overlay-text {
@@ -110,12 +105,13 @@ nav a:hover {
 .me3 {
     width: 100%;
     height: auto;
+    margin-top: 1rem;
 }
 
 
 /* Om mig */
 #about-me {
-    background: #efeae4;
+    background-color: #efeae4;
     padding: 3rem 2rem;
 }
 
@@ -128,12 +124,15 @@ nav a:hover {
 
 .about-me-grid img {
     width: 100%;
-
 }
 
 .about-me-text {
     width: 100%;
     height: auto;
+}
+
+.about-me-text p {
+    margin-bottom: 1.5rem;
 }
 
 .text-block h2 {
@@ -146,9 +145,23 @@ nav a:hover {
     font-size: 1rem;
 }
 
+.about-me-bt{
+    background-color: rgba(155, 178, 196, 0.5);
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
+.about-me-bt:hover{
+    background-color: rgba(155, 178, 196, 0.7);
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
 /*------ CV ------*/
 #cv{
-    background: #9BB2C4;
+    background-color: #9BB2C4;
     padding: 2rem;
     color: #efeae4;
 }
@@ -156,11 +169,11 @@ nav a:hover {
 .cv-heading{
     display: flex;
     justify-content: center;
-    background: #9BB2C4;
+    background-color: #9BB2C4;
 
 }
 #cv ul {
-    background: #9BB2C4;
+    background-color: #9BB2C4;
     display: flex;
     list-style-type: none;
     padding: 3rem 3rem;
@@ -169,7 +182,7 @@ nav a:hover {
 
 /*------ Uddannelse ------*/
 #education{
-    background: #efeae4;
+    background-color: #efeae4;
     padding: 2rem;
 }
 
@@ -197,9 +210,19 @@ nav a:hover {
             /*Hvis du har 3 <details> i en flex-række, så betyder flex: 1;, at hver af dem får præcis en tredjedel af pladsen, uanset hvor meget tekst der står i summary.*/
 }
 
+.education-fold-out details:hover {
+    background-color: rgba(155, 178, 196, 0.7);
+    transition: 0.3s;
+}
+
 .education-fold-out details ul{
     list-style-type: none;
 }
+
+.education-fold-out details li{
+    margin-bottom: 1.5rem;
+}
+
 
 .education-fold-out details[open]{
     display: block;
@@ -207,7 +230,7 @@ nav a:hover {
 
 /*------ Styrker  ------*/
 #strengths{
-    background: #9BB2C4;
+    background-color: #9BB2C4;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -217,38 +240,46 @@ nav a:hover {
 }
 
 #strengths ul {
-    background: #9BB2C4;
+    background-color: #9BB2C4;
     list-style-type: none;
     text-align: center;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+
 
 }
 #strengths li{
     font-size: 1rem;
 }
 
+#strengths li + li::before {
+    content: "•";
+    display: block;
+    color: #efeae4;
+    margin-right: 0.5rem;
+}
+
 /*------ Hvorfor vælge mig/ Mål  ------*/
 #why-me-goals{
-    background: #efeae4;
+    background-color: #efeae4;
     padding: 2rem;
     display: flex;
     gap: 2rem;
 }
 
 .why-me-goals-box{
-    background: rgba(155, 178, 196, 0.5); /*Gennemsigtig Farve*/
+    background-color: rgba(155, 178, 196, 0.5); /*Gennemsigtig Farve*/
     display: flex;
     flex-direction: column;
     padding: 2rem;
     border-radius: 2rem;
-
+    flex: 1;
 }
 
 /*------ Section.footer ------*/
 #contact {
     outline: #efeae4 solid 10px;
-    background: #9BB2C4;
+    background-color: #9BB2C4;
     text-align: center;
     color: #efeae4;
     padding-bottom: 1rem;
