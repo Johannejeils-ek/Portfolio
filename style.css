@@ -8,7 +8,7 @@
 .all-headings{
     font-size:1.5rem;
     font-weight: 600;
-    background: #9BB2C4;
+
 }
 
 
@@ -167,6 +167,14 @@ nav a:hover {
     gap: 4rem;
 }
 
+/*------ Uddannelse ------*/
+#education{
+    background: #efeae4;
+    color: red;
+    padding: 3rem;
+}
+
+
 /*------ Section.footer ------*/
 #contact {
     outline: #efeae4 solid 10px;
@@ -177,5 +185,4 @@ nav a:hover {
 
 #contact a{
     text-decoration: none;
-    
 }
