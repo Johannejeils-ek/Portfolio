@@ -206,6 +206,7 @@ nav a:hover {
     cursor: pointer;
     background: rgba(155, 178, 196, 0.5); /*Gennemsigtig Farve*/
     padding: 1rem;
+    display: inline-block;
     border-radius: 2rem;
     flex: 1; /* alle bokse fylder lige meget*/
             /*Hvis du har 3 <details> i en flex-række, så betyder flex: 1;, at hver af dem får præcis en tredjedel af pladsen, uanset hvor meget tekst der står i summary.*/
@@ -290,10 +291,25 @@ nav a:hover {
 #contact {
     outline: #efeae4 solid 10px;
     background-color: #9BB2C4;
-    text-align: center;
     color: #efeae4;
     padding-bottom: 1rem;
     padding-top: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#contact ul{
+    display: flex;
+    flex-direction: row;
+}
+
+#contact li{
+    list-style-type: none;
+    display: block;
 }
 
 #contact a{
