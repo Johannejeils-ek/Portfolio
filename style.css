@@ -145,12 +145,16 @@ nav a:hover {
     font-size: 1rem;
 }
 
+.about-me-bt summary{
+    font-weight: 500;
+}
+
 .about-me-bt{
     background-color: rgba(155, 178, 196, 0.5);
     display: inline-block;
     padding: 0.8rem;
     border-radius: 2rem;
-    font-weight: 600;
+    font-weight: 300;
 }
 
 .about-me-bt:hover{
@@ -202,7 +206,6 @@ nav a:hover {
 }
 
 .education-fold-out details{
-    font-weight: 500;
     cursor: pointer;
     background: rgba(155, 178, 196, 0.5); /*Gennemsigtig Farve*/
     padding: 1rem;
@@ -228,6 +231,14 @@ nav a:hover {
 
 .education-fold-out details[open]{
     display: block;
+}
+
+.education-fold-out summary{
+    font-weight: 500;
+}
+
+.education-fold-out summary p{
+    font-weight: 300;
 }
 
 /*------ Styrker  ------*/
