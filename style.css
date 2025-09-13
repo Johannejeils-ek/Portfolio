@@ -129,6 +129,7 @@ nav a:hover {
 .about-me-text {
     width: 100%;
     height: auto;
+    position: relative; /* Så både billedet og overlay-teksten placeres i forhold til den rigtige boks – ikke hele siden. */
 }
 
 .about-me-text p {
@@ -162,6 +163,29 @@ nav a:hover {
     display: inline-block;
     padding: 0.8rem;
     border-radius: 2rem;
+}
+
+
+.overlay-text2 {
+    display: inline-block;
+    transform: rotate(10deg);
+    position: absolute;
+    bottom: 30rem; /* placér lidt over bunden */
+    right: 1rem;  /* placér lidt fra højre */
+    z-index: 10;  /* sørger for at teksten ligger over billedet */
+
+    font-family: "Babylonica", cursive;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 5rem;
+}
+
+.imgEK{
+    max-width: 50%;  /* gør billedet mindre, så teksten får plads */
+    position: absolute;
+    bottom: -35rem;
+    right: 0;
+    z-index: 1; /* ligger under teksten */
 }
 
 /*------ CV ------*/
@@ -312,21 +336,20 @@ nav a:hover {
     gap: 1rem;
 }
 
-#contact ul{
+#contact ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
-
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
 }
 
-#contact a{
-    text-decoration: none;
+#contact li {
     display: flex;
-    justify-content: center;
-    row-gap: 2rem;
 }
 
-#contact img{
-    width: 12%;
+#contact img {
+    width: 40px;
     height: auto;
 }
