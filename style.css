@@ -297,19 +297,6 @@ nav a:hover {
     margin-right: 0.5rem;
 }
 
-.overlay-text3 {
-    display: inline-block;
-    transform: rotate(-10deg);
-    position: absolute;
-    bottom: -122rem; /* placér lidt over bunden */
-    right: 70rem;  /* placér lidt fra højre */
-    z-index: 10;  /* sørger for at teksten ligger over billedet */
-
-    font-family: "Babylonica", cursive;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 5rem;
-}
 /*------ Hvorfor vælge mig/ Mål  ------*/
 #why-me-goals{
     background-color: #efeae4;
