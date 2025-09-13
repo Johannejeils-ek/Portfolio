@@ -305,9 +305,6 @@ nav a:hover {
     color: #efeae4;
     padding-bottom: 1rem;
     padding-top: 1rem;
-}
-
-#contact p{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -315,15 +312,21 @@ nav a:hover {
     gap: 1rem;
 }
 
-#contact li{
+#contact ul{
     list-style-type: none;
+    display: flex;
+    justify-content: center;
+
 }
 
 #contact a{
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    row-gap: 2rem;
 }
 
 #contact img{
-    width: 3%;
+    width: 12%;
     height: auto;
 }
