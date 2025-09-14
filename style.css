@@ -16,6 +16,7 @@ body {
     font-family: "Spectral", serif;
     font-weight: 300;
     font-style: normal;
+    position: relative;
 }
 
 /* Header */
@@ -208,6 +209,14 @@ nav a:hover {
     list-style-type: none;
     padding: 3rem 3rem;
     gap: 4rem;
+}
+
+.imgEK{
+    max-width: 15%;  /* gør billedet mindre, så teksten får plads */
+    position: absolute;
+    bottom: 92rem;
+    right: 0;
+    z-index: 1; /* ligger under teksten */
 }
 
 /*------ Uddannelse ------*/
